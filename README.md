@@ -179,7 +179,9 @@ export class NumberMultiplier extends Boiler.InterfaceCommand {
 <br>
 
 ## Boiler.js is recommended for use with Command-line interface applications (CLI) and modules that are not packaged. (Discord.js bots, REST listeners and other client-side apps)
+---
 ## Libraries Used
-* `chalk`: Console coloring library [install here](https://www.npmjs.com/package/chalk)
 * `tar`: Directory zipping library  [install here](https://www.npmjs.com/package/tar)
+* `axios`: HTTP request library     [install here](https://www.npmjs.com/package/archiver)
+* `chalk`: Console coloring library [install here](https://www.npmjs.com/package/chalk)
 * `archiver`: TGZ Zipping library   [install here](https://www.npmjs.com/package/archiver)
