@@ -38,14 +38,19 @@ import * as Boiler from './.boiler/index.mjs';
 import logger from './.boiler/index.mjs';
 
 export class Main extends Boiler.Application {
-    /** @param {string[]} args `command-line` arguments for the file */ constructor(args) { super(); this.app = {}; this.app.args = args; };
+    /**
+     * @desc Method to execute when the application exits
+     * @param {Boiler.ApplicationStatus} info Information passed into the method
+     * @returns {void} `unknown` */ beforeExit(info) {
+        logger.warn('The application exited with the code ' + logger.num(info.exitCode) + '.');
+     };
     /** 
      * @desc Main method to execute
-     * @returns {number} The exit code for the application */ run() { 
+     * @returns {number} The exit code for the application */ async run() { 
         logger.print('Hello, World!');
         return 0;
     };
-}; 
+};
 ```
 
 This is the default application. When launched, it will print out 'Hello, World!' and exit with code 0.
