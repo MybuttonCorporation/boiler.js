@@ -21,5 +21,6 @@
     "cli-highlight": "^2.1.11",
     "highlight.js": "^11.6.0",
     "tar": "^6.1.11"
-  }
+  },
+  "licenses": ["MIT"]
 }
