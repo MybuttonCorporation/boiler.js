@@ -171,10 +171,9 @@ export class NumberMultiplier extends Boiler.InterfaceCommand {
 };
 ```
 
+<br><br>
 
-<br><br><br></br>
-
-## **License** `MIT`
+## Boiler.js is Licensed with MIT.
 
 <br>
 
