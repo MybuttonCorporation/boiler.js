@@ -1,0 +1,2 @@
+dirname=$(dirname $0)
+node $dirname/cli/run.mjs $*

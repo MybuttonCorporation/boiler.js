@@ -1,0 +1,1 @@
+export const colors = (await import('chalk')).default;

@@ -1,0 +1,10 @@
+{
+"extends": [
+    "plugin:import/typescript"
+  ],
+  "settings": {
+    "node": {
+      "tryExtensions": [".js", ".node", ".ts"]
+    }
+  }
+}
