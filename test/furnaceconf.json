@@ -1,7 +1,9 @@
 {
-    "name": "8249340279948798",
+    "name": "iamsocool",
     "version": "v1.0.0",
+    "author": "6849206220691375",
     "index": "/Volumes/Software/software/boiler.js/test/main.mjs",
-    "author": "4667466600458865",
-    "dependencies": []
+    "dependencies": [
+        "please-install-me-uwu"
+    ]
 }

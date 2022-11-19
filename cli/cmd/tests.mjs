@@ -10,7 +10,7 @@ export class TestsCommand extends InterfaceCommand {
     async run() {
         let timer1 = Date.now();
         remote.clientsay("connecting... " + remote.info('sending packets'))
-        const response = await axios.get('http://api.mybutton.org/boiler/api_stream/test_stream/this_is_my_little_son', {
+        const response = await axios.get('http://api.mybutton.org/boiler/api_stream/test_stream/hello', {
             responseType: "stream"
         });
         let j = response.data;

@@ -110,4 +110,5 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
         logger.print(`Project information:`, JSON.parse(boilerconf));
     }
 };
+
 export default new newCommand();

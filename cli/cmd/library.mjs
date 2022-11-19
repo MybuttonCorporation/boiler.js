@@ -51,14 +51,13 @@ export class LibrarySystem extends InterfaceCommand {
             return;
         }
         if (args[0] == 'pub') {
-            let conf = {
-                author: Math.random().toString().substring(2),
-                name: args[1],
-                version: args[2],
-                index: process.cwd() + '/main.mjs',
-                dependencies: []
+            let conf = {}
+            if (!existsSync(process.cwd() + '/furnaceconf.json')) {
+                logger.print("The configuration file is missing.");
+                logger.print("Use", logger.code("boiler lib"), "to create a base configuration.");
+                return 0;
             };
-            if (existsSync(process.cwd() + '/furnaceconf.json')) conf = JSON.parse(readFileSync(`${process.cwd()}/furnaceconf.json`));
+            conf = JSON.parse(readFileSync(`${process.cwd()}/furnaceconf.json`));
             logger.print("Publishing " + conf.name + '...');
             
             let createData = {
